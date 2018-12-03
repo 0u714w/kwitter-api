@@ -1,5 +1,9 @@
 const express = require("express");
 const Sequelize = require("sequelize");
+const multer = require("multer");
+
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage, fileSize: 500000 });
 
 const router = express.Router();
 const { User, Message, Like } = require("../models");
