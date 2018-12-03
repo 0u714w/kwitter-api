@@ -74,4 +74,19 @@ router.delete("/", authMiddleware, (req, res) => {
     });
 });
 
+// get image for user
+router.get("/:id/picture", (req, res) => {
+  res.status(501).send();
+});
+
+// put image for user
+router.put("/picture", authMiddleware, upload.single("picture"), (req, res) => {
+  res.status(501).send();
+});
+
+// delete image for user
+router.delete("/picture", authMiddleware, (req, res) => {
+  res.status(501).send();
+});
+
 module.exports = router;
