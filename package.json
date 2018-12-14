@@ -11,6 +11,7 @@
     "cors": "^2.8.4",
     "dotenv-safe": "^6.1.0",
     "express": "^4.15.4",
+    "foreman": "^3.0.1",
     "jsonwebtoken": "^8.0.1",
     "morgan": "^1.8.2",
     "passport": "^0.4.0",
